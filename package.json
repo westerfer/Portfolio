@@ -10,7 +10,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/michaelmov/michaelmov.github.io.git"
+    "url": "git@github.com:westerfer/portfolio.git",
+    "oldurl": "git+https://github.com/michaelmov/michaelmov.github.io.git"
   },
   "author": "",
   "license": "ISC",
