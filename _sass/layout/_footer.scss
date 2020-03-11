@@ -1,0 +1,62 @@
+footer {
+	padding-top: 9rem;
+	padding-bottom: 9rem;
+	position: relative;
+	overflow: hidden;
+
+	&:before {
+		content: '';
+		background: lighten($dark, 2%);
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 100%;
+	    height: 230%;
+	    transform: skew(60deg);
+	    z-index: 1;
+	}
+
+	.foot {
+		position: relative;
+		z-index: 2;
+	}
+
+	h6 {
+		font-size: 3.5rem;
+		color: $white;
+		border-bottom: .25rem solid $primary;
+		display: inline-block;
+		margin-bottom: 1rem;
+		padding-bottom: .5rem;
+	}
+
+	.applicant {
+		font-size: 95%;
+		letter-spacing: .1rem;
+	}
+
+	.mute {
+		font-size: 80%;
+		color: darken($white, 70%);
+	}
+
+	.applicant-info {
+		padding-bottom: .65rem;
+
+			&:last-child {
+				padding-bottom: 0;
+			}
+
+			a {
+				color: $white;
+        @include transition(.1s ease-in);
+
+					&:hover,
+					&:focus {
+						text-decoration: none;
+						color: darken($white, 35%);
+					}
+			}
+	}
+
+}

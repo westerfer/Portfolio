@@ -1,7 +1,24 @@
-<footer class="footer py-4 bg-light">
-  <div class="container-fluid">
-      <div class="col-md-12 d-flex justify-content-center">
-          <span class="text-muted text-uppercase">©{{ 'now' | date: "%Y" }} Michael Movsesov, All Rights Reserved</span>
+<footer class="footer bg-dark">
+  <div class="container foot">
+    <div class="col">
+      <h6>{{ site.author }}</h6>
+      <div class="d-flex flex-column applicant text-white">
+        <div class="applicant-info">
+          {{ site.title }}
+          <span class="mute">•</span>&nbsp;
+          {{ site.location }}
+        </div>
+        <div class="applicant-info">
+          <i class="fas fa-envelope mute"></i>&nbsp;
+          <a href="mailto:{{ site.email }}">{{ site.email }}</a>&nbsp;
+          <i class="fas fa-phone mute"></i>&nbsp;
+          <a href="tel:{{ site.phone }}">{{ site.phone }}</a>
+        </div>
+        <div class="applicant-info">
+          <a href="{{ site.linkedIn }}" target="_blank">LinkedIn</a>&nbsp;
+          <i class="far fa-code mute"></i>&nbsp;
+          <a href="{{ site.github }}" target="_blank">Github</a></div>
       </div>
+    </div>
   </div>
 </footer>

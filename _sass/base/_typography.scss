@@ -1,53 +1,163 @@
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 { 
-    font-family: 'Arvo', sans-serif;
+//h1, h2, h3, h4, h5, h6,
+//.h1, .h2, .h3, .h4, .h5, .h6 {
+//    font-family: 'Arvo', sans-serif;
+//}
+//
+//@include media-breakpoint-down(sm) {
+//    h1, .h1 {
+//        font-size: $font-size-base * 2.75;
+//    }
+//    h2, .h2 {
+//        font-size: $font-size-base * 2.25;
+//    }
+//    h3, .h3 {
+//        font-size: $font-size-base * 1.5;
+//    }
+//    h4, .h4 {
+//        font-size: $font-size-base * 1.25;
+//    }
+//    h5, .h5 {
+//        font-size: $font-size-base;
+//    }
+//    h6, .h6 {
+//        font-size: $font-size-base * 0.85;
+//    }
+//}
+//
+//.hljs {
+//    font-size: 14px;
+//}
+//
+//code {
+//    background-color: $gray-300;
+//    color: $primary-green;
+//    padding: 0 $spacer/2;
+//}
+//
+//blockquote {
+//    font-size: 1.7rem;
+//    font-weight: 600;
+//    line-height: 1.5;
+//    color: $gray-700;
+//
+//    @include media-breakpoint-down(sm) {
+//        font-size: 1.4rem;
+//    }
+//
+//    p {
+//        border-left: 4px solid $primary-green;
+//        padding-left: $spacer * 3;
+//        padding-right: $spacer * 3;
+//    }
+//}
+//
+
+a {
+    @include transition(.1s ease-in all);
 }
 
-@include media-breakpoint-down(sm) {
-    h1, .h1 {
-        font-size: $font-size-base * 2.75;
-    } 
-    h2, .h2 {
-        font-size: $font-size-base * 2.25;
-    } 
-    h3, .h3 {
-        font-size: $font-size-base * 1.5;
-    } 
-    h4, .h4 {
-        font-size: $font-size-base * 1.25;
-    } 
-    h5, .h5 {
-        font-size: $font-size-base;
-    } 
-    h6, .h6 {
-        font-size: $font-size-base * 0.85;
-    } 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    font-weight: $bold;
+    color: $dark;
+    font-family: $headfont;
 }
 
-.hljs {
-    font-size: 14px;
+h1,
+.h1 {
+    letter-spacing: .05rem;
+    font-size: 3.5rem;
 }
 
-code {
-    background-color: $gray-300;
-    color: $primary-green;
-    padding: 0 $spacer/2;
+h2,
+.h2 {
+    letter-spacing: .05rem;
+    font-size: 3rem;
 }
 
-blockquote {
-    font-size: 1.7rem;
-    font-weight: 600;
-    line-height: 1.5;
-    color: $gray-700;
+h3,
+.h3 {
+    letter-spacing: .05rem;
+    font-size: 2.5rem;
+}
 
-    @include media-breakpoint-down(sm) {
-        font-size: 1.4rem;
+h4,
+.h4 {
+    letter-spacing: .05rem;
+    font-size: 2rem;
+}
+
+h5,
+.h5 {
+    font-size: 1.5rem;
+}
+
+h6,
+.h6 {
+    font-size: 1rem;
+}
+
+
+
+.mantra-link {
+    color: $primary;
+    position: relative;
+    padding: .15rem .2rem .3rem .2rem;
+    @include transition(.1s ease-in !important);
+
+    font-weight: $bold;
+
+    &:before {
+        content: '';
+        background: darken($danger, 2%);
+        position: absolute;
+        width: 100%;
+        height: 0;
+        z-index: -1;
+        bottom: 0;
+        left: 0;
+        @include transition(.15s cubic-bezier(.17,.67,.47,.94) !important);
     }
 
-    p {
-        border-left: 4px solid $primary-green;
-        padding-left: $spacer * 3;
-        padding-right: $spacer * 3;
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        border-bottom: 1px dashed $primary;
+        width: 100%;
+        left: 0;
+        @include transition(.1s ease-in !important);
+    }
+
+    &:hover {
+        text-decoration: none;
+        color: $white !important;
+        @include transition-delay(.025s);
+
+        border-bottom: none;
+
+        &:before {
+            height: 100%;
+            @include transition(.15s cubic-bezier(.17,.67,.47,.94)!important);
+        }
+
+        &:after {
+            border-bottom: none;
+            @include transition(.1s ease-in !important);
+        }
     }
 }
 
+fa, .far, .fas {
+    font-family: $fontawesome !important;
+}

@@ -1,0 +1,177 @@
+.working {
+	height: 150px;
+	background-size: cover;
+	background-position: bottom;
+	background-repeat: no-repeat;
+	position: relative;
+  border: 3px solid $white;
+
+		@include breakpoint(min-tablet) {
+			height: 200px;
+		}
+
+    @include breakpoint(min-laptop) {
+      height: 285px;
+    }
+
+
+		&:before {
+			content: '';
+			background: rgba($dark, .5);
+			position: absolute;
+			left: 0;
+			top: 0;
+			height: 100%;
+			width: 100%;
+      @include transition(.25s ease-in all);
+      @include transition-delay(.05s);
+
+    }
+
+		&:hover:before {
+			background: rgba($dark, .5);
+		}
+}
+
+.lsect .working {
+  border: 3px solid $primary;
+}
+
+.work-tile1 {
+	background-image: url('/assets/images/work/ndr-lg.jpg');
+}
+.work-tile2 {
+	background-image: url('/assets/images/work/das-lg.jpg');
+}
+.work-tile3 {
+	background-image: url('/assets/images/work/lcnrd-lg.jpg');
+}
+.work-tile4 {
+	background-image: url('/assets/images/work/negov-lg.jpg');
+}
+.work-tile5 {
+	background-image: url('/assets/images/work/nsrb-lg.jpg');
+}
+.work-tile6 {
+	background-image: url('/assets/images/work/ni-lg.jpg');
+}
+
+.working:hover {
+
+	.worky {
+		opacity: 1;
+    @include transform(translateY(0));
+	}
+
+	.work-link {
+		opacity: 1;
+	}
+
+}
+.worky {
+  @include transform(translateY(25%));
+  @include transition(.15s ease-in all);
+
+	.worky-title {
+		font-size: 1.5rem;
+		color: $white;
+		font-weight: $bold;
+
+			@include breakpoint(max-tablet) {
+				font-size: 1.25rem;
+			}
+	}
+
+  @include breakpoint(max-tablet) {
+    @include transform(translateY(0));
+
+  }
+
+	.work-link {
+		padding: 3px 15px;
+		border: 1px solid $danger !important;
+		border-radius: 1rem;
+		position: relative;
+		overflow: hidden;
+		display: inline-block;
+		font-size: 85%;
+		font-weight: $bold;
+		z-index: 10;
+		opacity: 0;
+		color: $white !important;
+
+			&:before {
+				content: '';
+				background: $danger;
+				position: absolute;
+				left: -2px;
+				bottom: 0;
+				width: 110%;
+				height: 100%;
+        @include transition(.15s ease-in all);
+        z-index: -1;
+			}
+
+			&:hover,
+      &:focus {
+				color: $white !important;
+        text-decoration: none;
+
+					&:before {
+					left: -2px;
+					bottom: 0;
+					width: 110%;
+					height: 100%;
+					background: darken($danger, 5%);
+
+				}
+			}
+
+      @include breakpoint(max-tablet) {
+        opacity: 1;
+      }
+    }
+}
+
+.more-work {
+	padding: 3px 15px;
+	border: 1px solid $danger !important;
+	border-radius: 1rem;
+	position: relative;
+	overflow: hidden;
+	display: inline-block;
+	font-size: 85%;
+	font-weight: $bold;
+	z-index: 10;
+  @include transition(.15s ease-in all);
+	cursor: pointer;
+
+		&:before {
+			content: '';
+			background: $danger;
+			position: absolute;
+			left: -2px;
+			bottom: 0;
+			width: 110%;
+			height: 0;
+      @include transition(.15s ease-in all);
+      z-index: -1;
+		}
+
+
+
+		&:hover {
+			color: $white !important;
+
+				&:before {
+				left: -2px;
+				bottom: 0;
+				width: 110%;
+				height: 100%;
+			}
+		}
+}
+
+.fade-50 {
+	opacity: 50%;
+}

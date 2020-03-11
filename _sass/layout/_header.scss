@@ -1,0 +1,101 @@
+.hero {
+	height: 80vh;
+	background-image: url('/assets/images/header/topper.png');
+	background-size: 600px;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+
+	@include breakpoint(max-laptop) {
+		height: 60vh;
+    background-position: center;
+  }
+
+	@include breakpoint(max-tablet) {
+		height: initial;
+		background-image: none;
+	}
+}
+
+.munich {
+	margin-top: -1rem;
+
+	@include breakpoint(max-tablet) {
+		margin-top: 0rem;
+		padding: 100px 0 40px;
+	}
+
+}
+
+.header {
+  font-size: 1.5rem;
+	color: $secondary;
+	font-weight: 600;
+	letter-spacing: .06rem;
+}
+
+.subheader {
+	letter-spacing: .08rem;
+	font-weight: 700;
+}
+
+.subheader-copy {
+	font-size: 1rem;
+	font-weight: 600;
+}
+
+
+.subheader,
+.header,
+.subheader-copy {
+	position: relative;
+	// .sh-display (flex);
+	//@include shtransition(background-color 1s .5s, color 2s);
+
+	.text-wrapper {
+		position: relative;
+		display: inline;
+		overflow: hidden;
+	}
+
+	.letter {
+	  display: inline-block;
+
+			@include breakpoint(max-tablet) {
+				display: inline;
+			}
+	}
+}
+
+.jam {
+  max-width: 25px;
+  vertical-align: sub;
+}
+
+.hero-img {
+	position: relative;
+	background-image: url('/assets/images/header/header-xl.jpg');
+	height: 300px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+
+		@include breakpoint(max-desktop) {
+			background-image: url('/assets/images/header/header-lg.jpg');
+			height: 275px;
+		}
+
+		@include breakpoint(max-laptop) {
+			background-image: url('/assets/images/header/header-md.jpg');
+			height: 250px;
+		}
+
+		@include breakpoint(max-tablet) {
+			background-image: url('/assets/images/header/header-sm.jpg');
+			height: 150px;
+		}
+
+		@include breakpoint(max-phone) {
+			background-image: url('/assets/images/header/header-sm.jpg');
+			height: 175px;
+		}
+}

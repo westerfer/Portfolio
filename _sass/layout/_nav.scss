@@ -1,0 +1,134 @@
+
+
+.navbar {
+  box-shadow: 0 0 5px rgba($well, .25);
+
+	@include breakpoint(max-tablet) {
+		//padding-left: 0;
+		//padding-right: 0;
+		// padding-bottom: 0;
+    background: lighten($muted, 45%);
+    box-shadow: 0 4px 10px $well;
+	}
+}
+
+.navbar-collapse {
+	@include breakpoint(max-tablet) {
+			&:after {
+				// content: '';
+				border-bottom: 5px solid $danger;
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 100%;
+				height: 5px;
+			}
+	}
+}
+
+.navbar-nav{
+	font-size: .9rem;
+	font-weight: $bold;
+
+		@include breakpoint(max-tablet) {
+			text-align: right;
+			padding-left: 15px;
+			padding-right: 15px;
+			font-size: 1.1rem;
+
+		}
+
+		.nav-item {
+
+			@include breakpoint(min-tablet) {
+				padding-left: 0 !important;
+				padding-right: 1.75rem !important;
+			}
+
+			&:last-child {
+
+				@include breakpoint(min-tablet) {
+					padding-right: 0 !important;
+				}
+			}
+		}
+
+		.nav-link {
+			color: $muted;
+			position: relative;
+      @include transition(.15s ease-in all);
+			padding: .75rem .5rem;
+
+				@include breakpoint(min-tablet) {
+					padding: 0 .2rem !important;
+				}
+
+				&:hover {
+					color: $dark;
+				}
+
+				&.active:after {
+
+					@include breakpoint(min-tablet) {
+						padding: 0 .2rem !important;
+						content: '';
+						background: $danger;
+						position: absolute;
+						width: 100%;
+						right: 0;
+						height: 5px;
+						bottom: -2px;
+            @include transition(height .1s ease-in);
+            z-index: -1;
+					}
+				}
+
+				&.active:hover:after {
+
+					@include breakpoint(min-tablet) {
+            @include transition(.1s ease-in);
+						background: $danger;
+					}
+				}
+
+		}
+}
+
+.navbar-brand {
+	font-weight: $bold;
+}
+
+@include breakpoint(max-tablet) {
+	//.navbar-brand {
+	//	margin-left: 15px !important;
+	//	color: $white !important;
+	//}
+
+  .navbar-nav {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .navbar-toggler {
+    border: 0 !important;
+    //margin-right: 15px !important;
+    font-size: 1.75rem !important;
+    color: $dark !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+
+      &:hover,
+      &:focus {
+        outline: none;
+      }
+  }
+
+  .navbar {
+    border-bottom: 5px solid $primary !important;
+  }
+
+  .navbar-collapse {
+    text-align: right !important;
+  }
+}
+

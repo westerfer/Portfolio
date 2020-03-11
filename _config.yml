@@ -13,18 +13,26 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Michael Movsesov
-subtitle: 'UX/UI Engineer | Problem Solver'
-email: your-email@domain.com
-description: UX/UI Engineer
+author: Wes Fairhead
+title: UI/UX Developer
+#subtitle: 'UI/UX Developer'
+email: wfairhead@gmail.com
+descriptionn: UI/UX Developer
+location: Lincoln, Nebraska
+phone: 402.309.4653
+sitetitle: Professional Portfolio
+github: https://github.com/westerfer/
+linkedIn: https://www.linkedin.com/in/wes-fairhead-0277b06b/
+description: Hi, my name is Wes Fairhead. As a designer, it’s hard to focus on anything other than the design of the project. With time and experience I've discovered that there needs to be a strong relationship between both business logic and design to create a great user experience.
+
 baseurl: '' # the subpath of your site, e.g. /blog
 url: '' # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username: jekyll
 disqus:
-    shortname: michaelmovsesov
-google_analytics: UA-74351809-1
-google_tag_manager: GTM-M3842PX
+    shortname: wfairhead
+google_analytics: UA-74351809-1UPDATE
+google_tag_manager: GTM-M3842PXUPDATE
 
 # Build settings
 markdown: kramdown

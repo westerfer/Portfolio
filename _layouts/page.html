@@ -1,12 +1,21 @@
 ---
 layout: base
-title: Home
 ---
 
-<section class="page-body animsition" data-animsition-in-class="fade-in" data-animsition-in-duration="1200" data-animsition-out-class="fade-out" data-animsition-out-duration="700">
-    {% include _index/_hero.html %}
-    {% include _index/_mantra.html %}
-    {% include _index/_work.html %}
+<header>
+    <div class="container-fluid">
+        <div class="row hero-img">
+        </div>
+    </div>
+</header>
+
+<section class="inner-body animsition" data-animsition-in-class="fade-in" data-animsition-in-duration="1200" data-animsition-out-class="fade-out" data-animsition-out-duration="700">
+    <div class="container">
+        <h1 class="page-header">
+            {{ page.title | escape }}
+        </h1>
+        {{ content }}
+    </div>
 </section>
 
 <script>

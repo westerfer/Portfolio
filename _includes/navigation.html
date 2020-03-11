@@ -1,0 +1,20 @@
+<nav class="navbar container-fluid fixed-top navbar-expand-md navbar-light bg-light" role="navigation">
+<!--  {% assign default_paths = site.pages | map: "path" %}-->
+<!--  {% assign page_paths = site.navigation_pages | default: default_paths %}-->
+  <a class="navbar-brand" href="{{ site.url | absolute_url }}">{{ site.author }}</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fas fa-bars"></i>
+  </button>
+  <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      {% assign pages = site.pages | sort: 'weight' %}
+      {% for p in pages %}
+        {% if p.menu == 'main' %}
+          <li class="nav-item ">
+            <a class="nav-link {% if p.url == page.url %} active {% endif %}" href="{{ site.baseurl }}{{ p.url }}">{{ p.title }}</a>
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+</nav>

@@ -1,0 +1,271 @@
+//// Layout
+//$grid-gutter-width: 30px;
+//$container-max-width: 960px;
+//$container-padding: 3%;
+//
+//// Typography
+////
+////$font-family-headings: 'Arvo', serif;
+////$font-family-regular: 'Lato', serif;
+////$font-family-base: $font-family-regular;
+////$font-size-base: 1.125rem; // 18px (Assumes the browser default, typically `16px`)
+////$line-height-base: 1.8;
+//
+////$h1-font-size: $font-size-base * 3;
+////$h2-font-size: $font-size-base * 2.5;
+////$h3-font-size: $font-size-base * 1.75;
+////$h4-font-size: $font-size-base * 1.5;
+////$h5-font-size: $font-size-base * 1.25;
+////$h6-font-size: $font-size-base;
+//
+//$display1-size: 12rem;
+//$display2-size: 5.5rem;
+//$display3-size: 4.5rem;
+//$display4-size: 3.5rem;
+//
+//$headings-line-height: 1.2;
+//$blockquote-font-size: $font-size-base;
+//
+//// Colors
+//$body-color: rgba(0,0,0,.7);
+//$link-color: $body-color;
+//$primary-blue: #134E5E;
+//$primary-green: #71B280;
+//
+//$theme-colors: ();
+//$theme-colors: map-merge((
+//        "primary": $primary-blue,
+//        "secondary":  $primary-green,
+//), $theme-colors);
+//
+//
+//// Spacing
+//
+//$spacer: 8px;
+//$spacers: (
+//        0: 0,
+//        1: $spacer,
+//        2: ($spacer * 2),
+//        3: ($spacer * 3),
+//        4: ($spacer * 4),
+//        5: ($spacer * 5),
+//        6: ($spacer * 6),
+//        7: ($spacer * 7),
+//        8: ($spacer * 8),
+//        12: ($spacer * 12),
+//);
+
+// Base Colors
+//
+$primary: #113da8;
+$info: #A6A085;
+$success: #BF7D65;
+$warning: #BF7D65;
+$danger: #F25E5E;
+$secondary: #1d2325;
+$dark: #0F0F0F;
+$muted: #858585;
+$white: #FFFFFF;
+$well: $muted;
+$link: $primary;
+$link-hover: darken($link, 18%);
+
+// Base Button Shade Colors
+//
+$shadow: #21252a;
+$btn-shadow-hover: rgba($shadow, .35);
+$btn-shadow-active: rgba($shadow, .50);
+
+// Base Button Colors
+// ------------------
+$btn-primary: $primary;
+$btn-info: $info;
+$btn-success: $success;
+$btn-warning: $warning;
+$btn-warning-color: $secondary;
+$btn-danger: $danger;
+$btn-secondary: $secondary;
+$btn-dark: $dark;
+$btn-light: darken($white, 5%);
+$btn-light-color: $link;
+$btn-link: transparent;
+$btn-link-color: $link;
+$btn-white: $white;
+
+// Base Solid Button Hover Color
+//
+$btn-solid-primary-hover: darken($btn-primary, 3%);
+$btn-solid-info-hover: darken($btn-info, 5%);
+$btn-solid-success-hover: darken($btn-success, 3%);
+$btn-solid-warning-hover: lighten($btn-warning, 5%);
+$btn-solid-warning-hover-color: $btn-warning-color;
+$btn-solid-danger-hover: darken($btn-danger, 5%);
+$btn-solid-secondary-hover: darken($btn-secondary, 5%);
+$btn-solid-dark-hover: darken($btn-dark, 5%);
+$btn-solid-light-hover: darken($btn-white, 8%);
+$btn-solid-light-hover-color: darken($btn-light-color, 15%);
+$btn-solid-link-hover: $btn-link;
+$btn-solid-link-hover-color: darken($btn-link-color, 15%);
+
+// Base Solid Button Active Color
+//
+$btn-solid-primary-active: $primary;
+$btn-solid-info-active: $info;
+$btn-solid-success-active: $success;
+$btn-solid-warning-active: $warning;
+$btn-solid-warning-active-color: darken($btn-secondary, 10%);
+$btn-solid-danger-active: $btn-danger;
+$btn-solid-secondary-active: $btn-secondary;
+$btn-solid-dark-active: $btn-dark;
+$btn-solid-light-active: $btn-solid-light-hover;
+$btn-solid-light-active-color: darken($btn-light-color, 8%);
+$btn-solid-link-active: $btn-link;
+$btn-solid-link-active-color: darken($btn-link-color, 8%);
+
+// Base Solid Button Disabled Color
+//
+$btn-solid-primary-disabled: darken($btn-primary, 5%);
+$btn-solid-info-disabled: $btn-solid-info-hover;
+$btn-solid-success-disabled: darken($btn-success, 5%);
+$btn-solid-warning-disabled: darken($btn-warning, 5%);
+$btn-solid-danger-disabled: $btn-solid-danger-hover;
+$btn-solid-secondary-disabled: $btn-solid-secondary-hover;
+$btn-solid-dark-disabled: $btn-solid-dark-hover;
+$btn-solid-light-disabled: darken($btn-white, 10%);
+$btn-solid-light-disabled-color: $btn-solid-light-hover-color;
+$btn-solid-link-disabled: darken($btn-white, 10%);
+$btn-solid-link-disabled-color: $btn-solid-light-hover-color;
+
+// Base Outline Button Hover Color
+//
+$btn-outline-primary-hover: $primary;
+$btn-outline-info-hover: $info;
+$btn-outline-success-hover: $success;
+$btn-outline-warning-hover: $warning;
+$btn-outline-warning-hover-color: $secondary;
+$btn-outline-danger-hover: $danger;
+$btn-outline-secondary-hover: $secondary;
+$btn-outline-dark-hover: $dark;
+$btn-outline-light-hover: $btn-light;
+$btn-outline-light-hover-color: $btn-solid-light-hover-color;
+$btn-outline-link-hover: $btn-link;
+$btn-outline-link-hover-color: $btn-solid-link-hover-color;;
+
+// Base Outline Button Active Color
+//
+$btn-outline-primary-active: darken($btn-primary, 5%);
+$btn-outline-info-active: darken($btn-info, 7%);
+$btn-outline-success-active: darken($btn-success, 5%);
+$btn-outline-warning-active: lighten($btn-warning, 5%);
+$btn-outline-warning-active-color: darken($btn-secondary, 10%);
+$btn-outline-danger-active: $btn-solid-danger-hover;
+$btn-outline-secondary-active: $btn-solid-secondary-hover;
+$btn-outline-dark-active: $btn-solid-dark-hover;
+$btn-outline-light-active: $btn-solid-light-hover;
+$btn-outline-light-active-color: darken($link, 8%);
+$btn-outline-link-active: $btn-link;
+$btn-outline-link-active-color: darken($link, 8%);
+
+// Base Outline Button Disabled Color
+//
+$btn-outline-primary-disabled: darken($primary, 5%);
+$btn-outline-info-disabled: $btn-solid-info-hover;
+$btn-outline-success-disabled: darken($btn-success, 5%);
+$btn-outline-warning-disabled: darken($btn-warning, 5%);
+$btn-outline-warning-disabled-color: $btn-secondary;
+$btn-outline-danger-disabled: $btn-solid-danger-hover;
+$btn-outline-secondary-disabled-color: $btn-solid-secondary-hover;
+$btn-outline-secondary-disabled: $btn-solid-secondary-hover;
+$btn-outline-dark-disabled-color: $btn-solid-dark-hover;
+$btn-outline-dark-disabled: $btn-solid-dark-hover;
+$btn-outline-light-disabled: $btn-light;
+$btn-outline-light-disabled-color: $btn-solid-light-hover-color;
+$btn-outline-link-disabled: $btn-light;
+$btn-outline-link-disabled-color: $btn-solid-light-hover-color;
+
+// Button Default Properties
+//
+$button-letter-spacing: .05rem;
+$button-padding: .5rem 1rem;
+$btn-radius: .4em;
+$btn-rounded-radius: 1rem;
+
+// Button Large Properties
+//
+$button-lg-letter-spacing: .1rem;
+$button-lg-padding: .45rem;
+$button-lg-font-size: 1.05rem !important;
+
+// Button Small Properties
+//
+$button-sm-padding: .45rem 1rem;
+$button-sm-font-size: .85rem !important;
+
+// Border Default Colors
+//
+$border-color: #D5D5D5 !important;
+
+// Font Family & Weights
+// ------------------
+$basefont:     'Lato', sans-serif;
+$headfont:     'Work Sans', sans-serif;
+$fontawesome:  'Font Awesome 5 Pro';
+$medium: 		400;
+$bold: 		    700;
+
+// Mixins
+//
+
+@mixin transition($value) {
+  transition: $value;
+  -webkit-transition: $value;
+  -moz-transition: $value;
+  -ms-transition: $value;
+  -o-transition: $value;
+}
+
+@mixin transform($value) {
+  transform: $value;
+  -webkit-transform: $value;
+  -moz-transform: $value;
+  -ms-transform: $value;
+  -o-transform: $value;
+}
+
+@mixin transition-delay($value) {
+  transition-delay: $value;
+  -webkit-transition-delay: $value;
+  -moz-transition-delay: $value;
+  -ms-transition-delay: $value;
+  -o-transition-delay: $value;
+}
+
+// Breakpoints
+//
+
+@mixin breakpoint($point) {
+  @if $point == max-desktop {
+    @media (max-width: 1199px) { @content; }
+  }
+  @else if $point == max-laptop {
+    @media (max-width: 991px) { @content; }
+  }
+  @else if $point == max-tablet {
+    @media (max-width: 767px) { @content; }
+  }
+  @else if $point == max-phone {
+    @media (max-width: 575px) { @content; }
+  }
+  @if $point == min-desktop {
+    @media (min-width: 1199px) { @content; }
+  }
+  @else if $point == min-laptop {
+    @media (min-width: 991px) { @content; }
+  }
+  @else if $point == min-tablet {
+    @media (min-width: 767px) { @content; }
+  }
+  @else if $point == min-phone {
+    @media (min-width: 575px) { @content; }
+  }
+}
