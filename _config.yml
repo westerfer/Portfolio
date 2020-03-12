@@ -15,15 +15,15 @@
 # in the templates via {{ site.myvariable }}.
 author: Wes Fairhead
 title: UI/UX Developer
-#subtitle: 'UI/UX Developer'
+jobtitle: 'UI/UX Developer'
 email: wfairhead@gmail.com
-descriptionn: UI/UX Developer
+#descriptionn: UI/UX Developer
 location: Lincoln, Nebraska
 phone: 402.309.4653
 sitetitle: Professional Portfolio
+description: Hi, my name is Wes Fairhead. As a designer, it’s hard to focus on anything other than the design of the project. With time and experience I've discovered that there needs to be a strong relationship between both business logic and design to create a great user experience.
 github: https://github.com/westerfer/
 linkedIn: https://www.linkedin.com/in/wes-fairhead-0277b06b/
-description: Hi, my name is Wes Fairhead. As a designer, it’s hard to focus on anything other than the design of the project. With time and experience I've discovered that there needs to be a strong relationship between both business logic and design to create a great user experience.
 
 baseurl: '' # the subpath of your site, e.g. /blog
 url: '' # the base hostname & protocol for your site, e.g. http://example.com
@@ -31,9 +31,40 @@ twitter_username: jekyllrb
 github_username: jekyll
 disqus:
     shortname: wfairhead
-google_analytics: UA-74351809-1UPDATE
-google_tag_manager: GTM-M3842PXUPDATE
+#google_analytics: UA-74351809-1UPDATE
+#google_tag_manager: GTM-M3842PXUPDATE
 
+
+# Work
+work1-title: Nebraska Department of Revenue
+work1-description: Nebraska Department of Revenue Description
+work1-link: https://revenue.nebraska.gov/
+
+work2-title: Nebraska Dept. of Administrative Services
+work2-description: Nebraska Dept. of Administrative Services Description
+work2-link: https://link.nebraska.gov/
+
+work3-title: Lewis &amp; Clark NRD
+work3-description: Lewis &amp; Clark NRD Description
+work3-link: https://lcnrd.nebraska.gov/
+
+work4-title: Nebraska.gov
+work4-description: Nebraska.gov Description
+work4-link: https://www.nebraska.gov/
+
+work5-title: Nebraska State Records Board
+work5-description: Nebraska State Records Board Description
+work5-link: https://staterecordsboard.nebraska.gov/
+
+work6-title: Nebraska Interactive
+work6-description: Nebraska Interactive Description
+work6-link: http://www.nebraska-interactive.com/
+
+worklink-title: View Website
+
+#body {
+    #background: url(../images/{% if page.bgimage %}{{ page.bgimage }}{% else %}{{ site.bgimage }}{% endif %}) no-repeat bottom center;
+#}
 # Build settings
 markdown: kramdown
 permalink: /articles/:title

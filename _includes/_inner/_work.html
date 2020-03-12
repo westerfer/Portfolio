@@ -1,11 +1,19 @@
+{% if page.type == "home" %}
+		Home page content
+	{% elsif page.type == "inner" %}
+		Inner page content
+	{% else %}
+{% endif %}
+
 <div class="">
 	<div class="">
 		<div class="d-flex work-img working work-tile1">
 			<div class="col align-self-center text-center work-title">
 				<div class="worky">
-					<h4 class="worky-title d-block">Nebraska Department of Revenue</h4>
-					<a href="https://revenue.nebraska.gov/" target="_blank" class="work-link">
-						View Website
+					<h4 class="worky-title d-block">{{ site.work1-title }}</h4>
+					<a href="{{ site.work1-link}}" target="_blank" class="work-link">
+						{{ site.worklink-title}}
+						{{ site.work1-description}}
 					</a>
 				</div>
 			</div>
@@ -15,9 +23,10 @@
 		<div class="d-flex work-img working work-tile2">
 			<div class="col align-self-center text-center work-title">
 				<div class="worky">
-					<h4 class="worky-title d-block">Nebraska Dept. of Administrative Services</h4>
-					<a href="https://link.nebraska.gov/" target="_blank" class="work-link">
-						View Website
+					<h4 class="worky-title d-block">{{ site.work2-title }}</h4>
+					<a href="{{ site.work2-link}}" target="_blank" class="work-link">
+						{{ site.worklink-title}}
+						{{ site.work2-description}}
 					</a>
 				</div>
 			</div>
@@ -27,9 +36,10 @@
 		<div class="d-flex work-img working work-tile3">
 			<div class="col align-self-center text-center work-title">
 				<div class="worky">
-					<h4 class="worky-title d-block">Lewis &amp; Clark NRD</h4>
-					<a href="https://lcnrd.nebraska.gov/" target="_blank" class="work-link">
-						View Website
+					<h4 class="worky-title d-block">{{ site.work3-title }}</h4>
+					<a href="{{ site.work3-link}}" target="_blank" class="work-link">
+						{{ site.worklink-title}}
+						{{ site.work3-description}}
 					</a>
 				</div>
 			</div>
@@ -39,9 +49,10 @@
 		<div class="d-flex work-img working work-tile4">
 			<div class="col align-self-center text-center work-title">
 				<div class="worky">
-					<h4 class="worky-title d-block">Nebraska.gov</h4>
-					<a href="https://www.nebraska.gov/" target="_blank" class="work-link">
-						View Website
+					<h4 class="worky-title d-block">{{ site.work4-title }}</h4>
+					<a href="{{ site.work4-link}}" target="_blank" class="work-link">
+						{{ site.worklink-title}}
+						{{ site.work4-description}}
 					</a>
 				</div>
 			</div>
@@ -51,9 +62,10 @@
 		<div class="d-flex work-img working work-tile5">
 			<div class="col align-self-center text-center work-title">
 				<div class="worky">
-					<h4 class="worky-title d-block">Nebraska State Records Board</h4>
-					<a href="https://staterecordsboard.nebraska.gov/" target="_blank" class="work-link">
-						View Website
+					<h4 class="worky-title d-block">{{ site.work5-title }}</h4>
+					<a href="{{ site.work5-link}}" target="_blank" class="work-link">
+						{{ site.worklink-title}}
+						{{ site.work5-description}}
 					</a>
 				</div>
 			</div>
@@ -63,9 +75,10 @@
 		<div class="d-flex work-img working work-tile6">
 			<div class="col align-self-center text-center work-title">
 				<div class="worky">
-					<h4 class="worky-title d-block">Nebraska Interactive</h4>
-					<a href="http://www.nebraska-interactive.com/" target="_blank" class="work-link">
-						View Website
+					<h4 class="worky-title d-block">{{ site.work6-title }}</h4>
+					<a href="{{ site.work6-link}}" target="_blank" class="work-link">
+						{{ site.worklink-title}}
+						{{ site.work6-description}}
 					</a>
 				</div>
 			</div>

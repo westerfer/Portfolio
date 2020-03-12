@@ -96,6 +96,12 @@
 
 .navbar-brand {
 	font-weight: $bold;
+
+	img {
+		width: 40px;
+		margin-right: .25rem;
+		vertical-align: top;
+	}
 }
 
 @include breakpoint(max-tablet) {
