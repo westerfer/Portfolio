@@ -1,87 +1,244 @@
 {% if page.type == "home" %}
-		Home page content
+	<div class="row index-work">
+		<div class="col-12">
+				<div class="work-home d-flex flex-row">
+					<div class="work-item">
+						<div class="work-img work-tile1"></div>
+						<div class="work-info">
+							<h4>{{ site.work1-title }}</h4>
+							<div class="work-desc">
+								{{ site.work1-description}}
+							</div>
+							<a href="{{ site.work1-link}}" class="mantra-link work-link">{{ site.worklink-title}}<i class="fal fa-long-arrow-right pl-2"></i></a>
+						</div>
+					</div>
+					<div class="work-item">
+						<div class="work-img work-tile2"></div>
+						<div class="work-info">
+							<h4>{{ site.work2-title }}</h4>
+							<div class="work-desc">
+								{{ site.work2-description}}
+							</div>
+							<a href="{{ site.work2-link}}" class="mantra-link work-link">{{ site.worklink-title}}<i class="fal fa-long-arrow-right pl-2"></i></a>
+						</div>
+					</div>
+					<div class="work-item">
+						<div class="work-img work-tile3"></div>
+						<div class="work-info">
+							<h4>{{ site.work3-title }}</h4>
+							<div class="work-desc">
+								{{ site.work3-description}}
+							</div>
+							<a href="{{ site.work3-link}}" class="mantra-link work-link">{{ site.worklink-title}}<i class="fal fa-long-arrow-right pl-2"></i></a>
+						</div>
+					</div>
+					<div class="work-item">
+						<div class="work-img work-tile4"></div>
+						<div class="work-info">
+							<h4>{{ site.work4-title }}</h4>
+							<div class="work-desc">
+								{{ site.work4-description}}
+							</div>
+							<a href="{{ site.work4-link}}" class="mantra-link work-link">{{ site.worklink-title}}<i class="fal fa-long-arrow-right pl-2"></i></a>
+						</div>
+					</div>
+					<div class="work-item">
+						<div class="work-img work-tile5"></div>
+						<div class="work-info">
+							<h4>{{ site.work5-title }}</h4>
+							<div class="work-desc">
+								{{ site.work5-description}}
+							</div>
+							<a href="{{ site.work5-link}}" class="mantra-link work-link">{{ site.worklink-title}}<i class="fal fa-long-arrow-right pl-2"></i></a>
+						</div>
+					</div>
+					<div class="work-item">
+						<div class="work-img work-tile6"></div>
+						<div class="work-info">
+							<h4>{{ site.work6-title }}</h4>
+							<div class="work-desc">
+								{{ site.work6-description}}
+							</div>
+							<a href="{{ site.work6-link}}" class="mantra-link work-link">{{ site.worklink-title}}<i class="fal fa-long-arrow-right pl-2"></i></a>
+						</div>
+					</div>
+				</div>
+		</div>
+	</div>
+
+
+
 	{% elsif page.type == "inner" %}
-		Inner page content
+
+		<div class="col-12 iwork">
+			<div class="row">
+				<div class="col-6 text-right inner-wtitle flex-row">
+					<div class="work-tile1 thumb"></div>
+				</div>
+				<div class="col-6 flex-column align-self-center">
+					<h2 class="h5 mb-0">
+						{{ site.work1-title }}
+					</h2>
+					<a href="{{ site.work1-link}}" class="work-inner-link">
+						{{ site.worklink-title}}<i class="fal fa-long-arrow-right pl-2"></i>
+					</a>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-6 text-right inner-wtitle flex-row">
+					<div class="work-tile2 thumb"></div>
+				</div>
+				<div class="col-6 flex-column align-self-center">
+					<h2 class="h5 mb-0">
+						{{ site.work2-title }}
+					</h2>
+					<a href="{{ site.work2-link}}" class="work-inner-link">
+						{{ site.worklink-title}}<i class="fal fa-long-arrow-right pl-2"></i>
+					</a>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-6 text-right inner-wtitle flex-row">
+					<div class="work-tile3 thumb"></div>
+				</div>
+				<div class="col-6 flex-column align-self-center">
+					<h2 class="h5 mb-0">
+						{{ site.work3-title }}
+					</h2>
+					<a href="{{ site.work3-link}}" class="work-inner-link">
+						{{ site.worklink-title}}<i class="fal fa-long-arrow-right pl-2"></i>
+					</a>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-6 text-right inner-wtitle flex-row">
+					<div class="work-tile4 thumb"></div>
+				</div>
+				<div class="col-6 flex-column align-self-center">
+					<h2 class="h5 mb-0">
+						{{ site.work4-title }}
+					</h2>
+					<a href="{{ site.work4-link}}" class="work-inner-link">
+						{{ site.worklink-title}}<i class="fal fa-long-arrow-right pl-2"></i>
+					</a>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-6 text-right inner-wtitle flex-row">
+					<div class="work-tile5 thumb"></div>
+				</div>
+				<div class="col-6 flex-column align-self-center">
+					<h2 class="h5 mb-0">
+						{{ site.work5-title }}
+					</h2>
+					<a href="{{ site.work5-link}}" class="work-inner-link">
+						{{ site.worklink-title}}<i class="fal fa-long-arrow-right pl-2"></i>
+					</a>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-6 text-right inner-wtitle flex-row">
+					<div class="work-tile6 thumb"></div>
+				</div>
+				<div class="col-6 flex-column align-self-center">
+					<h2 class="h5 mb-0">
+						{{ site.work6-title }}
+					</h2>
+					<a href="{{ site.work6-link}}" class="work-inner-link">
+						{{ site.worklink-title}}<i class="fal fa-long-arrow-right pl-2"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+
+
+
+
 	{% else %}
 {% endif %}
 
-<div class="">
-	<div class="">
-		<div class="d-flex work-img working work-tile1">
-			<div class="col align-self-center text-center work-title">
-				<div class="worky">
-					<h4 class="worky-title d-block">{{ site.work1-title }}</h4>
-					<a href="{{ site.work1-link}}" target="_blank" class="work-link">
-						{{ site.worklink-title}}
-						{{ site.work1-description}}
-					</a>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="">
-		<div class="d-flex work-img working work-tile2">
-			<div class="col align-self-center text-center work-title">
-				<div class="worky">
-					<h4 class="worky-title d-block">{{ site.work2-title }}</h4>
-					<a href="{{ site.work2-link}}" target="_blank" class="work-link">
-						{{ site.worklink-title}}
-						{{ site.work2-description}}
-					</a>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="">
-		<div class="d-flex work-img working work-tile3">
-			<div class="col align-self-center text-center work-title">
-				<div class="worky">
-					<h4 class="worky-title d-block">{{ site.work3-title }}</h4>
-					<a href="{{ site.work3-link}}" target="_blank" class="work-link">
-						{{ site.worklink-title}}
-						{{ site.work3-description}}
-					</a>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="">
-		<div class="d-flex work-img working work-tile4">
-			<div class="col align-self-center text-center work-title">
-				<div class="worky">
-					<h4 class="worky-title d-block">{{ site.work4-title }}</h4>
-					<a href="{{ site.work4-link}}" target="_blank" class="work-link">
-						{{ site.worklink-title}}
-						{{ site.work4-description}}
-					</a>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="">
-		<div class="d-flex work-img working work-tile5">
-			<div class="col align-self-center text-center work-title">
-				<div class="worky">
-					<h4 class="worky-title d-block">{{ site.work5-title }}</h4>
-					<a href="{{ site.work5-link}}" target="_blank" class="work-link">
-						{{ site.worklink-title}}
-						{{ site.work5-description}}
-					</a>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="">
-		<div class="d-flex work-img working work-tile6">
-			<div class="col align-self-center text-center work-title">
-				<div class="worky">
-					<h4 class="worky-title d-block">{{ site.work6-title }}</h4>
-					<a href="{{ site.work6-link}}" target="_blank" class="work-link">
-						{{ site.worklink-title}}
-						{{ site.work6-description}}
-					</a>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
+<!--<div class="">-->
+<!--	<div class="">-->
+<!--		<div class="d-flex work-img working work-tile1">-->
+<!--			<div class="col align-self-center text-center work-title">-->
+<!--				<div class="worky">-->
+<!--					<h4 class="worky-title d-block">{{ site.work1-title }}</h4>-->
+<!--					<a href="{{ site.work1-link}}" target="_blank" class="work-link">-->
+<!--						{{ site.worklink-title}}-->
+<!--						{{ site.work1-description}}-->
+<!--					</a>-->
+<!--				</div>-->
+<!--			</div>-->
+<!--		</div>-->
+<!--	</div>-->
+<!--	<div class="">-->
+<!--		<div class="d-flex work-img working work-tile2">-->
+<!--			<div class="col align-self-center text-center work-title">-->
+<!--				<div class="worky">-->
+<!--					<h4 class="worky-title d-block">{{ site.work2-title }}</h4>-->
+<!--					<a href="{{ site.work2-link}}" target="_blank" class="work-link">-->
+<!--						{{ site.worklink-title}}-->
+<!--						{{ site.work2-description}}-->
+<!--					</a>-->
+<!--				</div>-->
+<!--			</div>-->
+<!--		</div>-->
+<!--	</div>-->
+<!--	<div class="">-->
+<!--		<div class="d-flex work-img working work-tile3">-->
+<!--			<div class="col align-self-center text-center work-title">-->
+<!--				<div class="worky">-->
+<!--					<h4 class="worky-title d-block">{{ site.work3-title }}</h4>-->
+<!--					<a href="{{ site.work3-link}}" target="_blank" class="work-link">-->
+<!--						{{ site.worklink-title}}-->
+<!--						{{ site.work3-description}}-->
+<!--					</a>-->
+<!--				</div>-->
+<!--			</div>-->
+<!--		</div>-->
+<!--	</div>-->
+<!--	<div class="">-->
+<!--		<div class="d-flex work-img working work-tile4">-->
+<!--			<div class="col align-self-center text-center work-title">-->
+<!--				<div class="worky">-->
+<!--					<h4 class="worky-title d-block">{{ site.work4-title }}</h4>-->
+<!--					<a href="{{ site.work4-link}}" target="_blank" class="work-link">-->
+<!--						{{ site.worklink-title}}-->
+<!--						{{ site.work4-description}}-->
+<!--					</a>-->
+<!--				</div>-->
+<!--			</div>-->
+<!--		</div>-->
+<!--	</div>-->
+<!--	<div class="">-->
+<!--		<div class="d-flex work-img working work-tile5">-->
+<!--			<div class="col align-self-center text-center work-title">-->
+<!--				<div class="worky">-->
+<!--					<h4 class="worky-title d-block">{{ site.work5-title }}</h4>-->
+<!--					<a href="{{ site.work5-link}}" target="_blank" class="work-link">-->
+<!--						{{ site.worklink-title}}-->
+<!--						{{ site.work5-description}}-->
+<!--					</a>-->
+<!--				</div>-->
+<!--			</div>-->
+<!--		</div>-->
+<!--	</div>-->
+<!--	<div class="">-->
+<!--		<div class="d-flex work-img working work-tile6">-->
+<!--			<div class="col align-self-center text-center work-title">-->
+<!--				<div class="worky">-->
+<!--					<h4 class="worky-title d-block">{{ site.work6-title }}</h4>-->
+<!--					<a href="{{ site.work6-link}}" target="_blank" class="work-link">-->
+<!--						{{ site.worklink-title}}-->
+<!--						{{ site.work6-description}}-->
+<!--					</a>-->
+<!--				</div>-->
+<!--			</div>-->
+<!--		</div>-->
+<!--	</div>-->
+<!--</div>-->

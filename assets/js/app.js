@@ -43,3 +43,4 @@ function init_hobbies() {
 $(function() {
 	$(".exp-details p").prepend('<i class="fad fa-scrubber exp-details-icon"></i>');
 });
+
