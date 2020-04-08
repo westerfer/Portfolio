@@ -17,6 +17,11 @@
 
 	.about-content {
 		padding-left: 1.5rem;
+
+		@include breakpoint(max-tablet) {
+			padding-left: 0;
+		}
+
 	}
 
 	.exp-title {

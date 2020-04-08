@@ -34,13 +34,12 @@ disqus:
 #google_analytics: UA-74351809-1UPDATE
 #google_tag_manager: GTM-M3842PXUPDATE
 
-
 # Work
-work1-title: Dept. of Revenue
+work1-title: Department of Revenue
 work1-description: Dept. of Revenue Description
 work1-link: https://revenue.nebraska.gov/
 
-work2-title: Admin. Services
+work2-title: Administrative Services
 work2-description: Dept. of Administrative Services Description
 work2-link: https://link.nebraska.gov/
 
@@ -62,7 +61,14 @@ work6-link: http://www.nebraska-interactive.com/
 
 worklink-title: View Website
 
-#body {
+
+# Metatag Details
+home_meta: One of most important rules that I like to follow when developing a user interface or creating that perfect experience. However, there's a certain point in every design where this rule, like many others, is meant to be broken.
+about_meta: With time and experience I've discovered that there needs to be a strong relationship between both business logic and design to create a great user experience.
+work_meta: Research. Design. Execute. I like to fully research any project and have all questions answered before development starts.
+resume_meta: I'm a UI/UX Developer with over 5 years of experience in design and development.
+contact_meta: Hi! I'm Wes Fairhead and I'm a UI/UX Developer. Traveling, gardening, animals and coding are my jam Get in touch with me today!
+    #body {
     #background: url(../images/{% if page.bgimage %}{{ page.bgimage }}{% else %}{{ site.bgimage }}{% endif %}) no-repeat bottom center;
 #}
 # Build settings

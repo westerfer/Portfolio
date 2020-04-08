@@ -20,8 +20,9 @@
 	margin-top: -1rem;
 
 	@include breakpoint(max-tablet) {
-		margin-top: 0rem;
-		padding: 100px 0 40px;
+		margin-top: 0;
+		padding-top: 100px;
+		padding-bottom: 40px;
 	}
 
 }
