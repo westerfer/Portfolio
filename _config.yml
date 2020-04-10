@@ -27,7 +27,7 @@ github: https://github.com/westerfer/
 linkedIn: https://www.linkedin.com/in/wes-fairhead-0277b06b/
 
 baseurl: '' # the subpath of your site, e.g. /blog
-url: 'https://nervous-cray-f1700e.netlify.com/' # the base hostname & protocol for your site, e.g. http://example.com
+url: 'http://wester-fer.com/' #
 #google_analytics: UA-74351809-1UPDATE
 #google_tag_manager: GTM-M3842PXUPDATE
 
