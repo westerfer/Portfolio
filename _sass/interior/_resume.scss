@@ -2,6 +2,11 @@
   background: rgba($well, .1%);
   border-radius: 5px;
   padding: 1rem;
+
+	@include breakpoint(max-tablet) {
+		background: none;
+		padding: 0;
+	}
 }
 
 .resume-head {

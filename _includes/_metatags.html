@@ -24,7 +24,7 @@
 {% endif %}
 
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://westerfer.io">
+<meta property="og:url" content="{{ site.url }}">
 <meta property="og:title" content="{% if page.title %}{{ page.title | escape }}{% else %} Home {% endif %} | {{ site.author }}">
 
 {% if page.title contains 'Home' %}
@@ -48,10 +48,10 @@
 {% if page.title contains 'Contact' %}
 <meta name="og:description" content="{{ site.contact_meta}}">
 {% endif %}
-<meta property="og:image" content="http://localhost:4000/assets/images/header/social-backup.jpg">
+<meta property="og:image" content="{{ site.url }}/assets/images/header/social-backup.jpg">
 
 <meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="https://westerfer.io">
+<meta property="twitter:url" content="{{ site.url }}">
 <meta property="twitter:title" content="{% if page.title %}{{ page.title | escape }}{% else %} Home {% endif %} | {{ site.author }}">
 
 {% if page.title contains 'Home' %}
@@ -75,4 +75,4 @@
 {% if page.title contains 'Contact' %}
 <meta name="twitter:description" content="{{ site.contact_meta}}">
 {% endif %}
-<meta property="twitter:image" content="http://localhost:4000/assets/images/header/social-backup.jpg">
+<meta property="twitter:image" content="{{ site.url }}/assets/images/header/social-backup.jpg">

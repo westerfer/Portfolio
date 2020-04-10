@@ -15,10 +15,11 @@
 # in the templates via {{ site.myvariable }}.
 author: Wes Fairhead
 title: UI/UX Developer
-jobtitle: 'UI/UX Developer'
+jobtitle: UI/UX Developer
 email: wfairhead@gmail.com
-#descriptionn: UI/UX Developer
-location: Lincoln, Nebraska
+location: Lincoln,&nbsp;Nebraska
+city: Lincoln
+state: Nebraska
 phone: 402.309.4653
 sitetitle: Professional Portfolio
 description: Hi, my name is Wes Fairhead. As a UI/UX Developer, it’s hard to focus on anything other than the design of the project. With time and experience I've discovered that there needs to be a strong relationship between both business logic and design to create a great user experience.
@@ -26,11 +27,7 @@ github: https://github.com/westerfer/
 linkedIn: https://www.linkedin.com/in/wes-fairhead-0277b06b/
 
 baseurl: '' # the subpath of your site, e.g. /blog
-url: '' # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username: jekyll
-disqus:
-    shortname: wfairhead
+url: 'https://nervous-cray-f1700e.netlify.com/' # the base hostname & protocol for your site, e.g. http://example.com
 #google_analytics: UA-74351809-1UPDATE
 #google_tag_manager: GTM-M3842PXUPDATE
 

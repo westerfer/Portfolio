@@ -28,6 +28,10 @@ footer {
 		display: inline-block;
 		margin-bottom: 1rem;
 		padding-bottom: .5rem;
+
+		@include breakpoint(max-phone) {
+			font-size: 3rem;
+		}
 	}
 
 	.applicant {

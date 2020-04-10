@@ -6,11 +6,11 @@
     <div class="col-12 d-flex flex-column resume-head">
   {% endif %}
 
-  <h2 class="h4 mb-0">WES FAIRHEAD</h2>
-  <h3 class="h5 mb-2 text-danger">UI/UX Developer</h3>
-  <h4 class="p font-weight-bold mb-1">Lincoln, Nebraska</h4>
-  <h4 class="p font-weight-bold mb-1"><a href="mailto:wfairhead@gmail.com" >wfairhead@gmail.com</a></h4>
-  <h4 class="p font-weight-bold mb-0"><a href="tel:402.309.4653">402.309.4653</a></h4>
+  <h2 class="h4 mb-0">{{ site.author }}</h2>
+  <h3 class="h5 mb-2 text-danger">{{ site.title }}</h3>
+  <h4 class="p font-weight-bold mb-1">{{ site.city }},&nbsp;{{site.state}}</h4>
+  <h4 class="p font-weight-bold mb-1"><a href="mailto:{{ site.email }}" >{{ site.email }}</a></h4>
+  <h4 class="p font-weight-bold mb-0"><a href="tel:{{ site.phone }}">{{ site.phone }}</a></h4>
   {% if page.type == "contact" %}
     </div>
   {% endif %}
