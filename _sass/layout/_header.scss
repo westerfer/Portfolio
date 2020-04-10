@@ -16,6 +16,23 @@
 	}
 }
 
+.error-img {
+	height: 600px;
+	background-image: url('/assets/images/header/topper.png');
+	background-size: 600px;
+	background-position: right bottom;
+	background-repeat: no-repeat;
+
+	@include breakpoint(max-laptop) {
+		height: initial;
+		background-image: none;
+	}
+}
+
+.error-message {
+
+}
+
 .munich {
 	margin-top: -1rem;
 

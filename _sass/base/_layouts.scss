@@ -50,28 +50,31 @@ body {
 }
 
 .text-primary {
-  color: $primary;
+  color: $primary !important;
 }
 .text-info {
-  color: $info;
+  color: $info !important;
 }
 .text-warning {
-  color: $warning;
+  color: $warning !important;
 }
 .text-success {
-  color: $success;
+  color: $success !important;
 }
 .text-danger {
-  color: $danger;
+  color: $danger !important;
 }
 .text-secondary {
-  color: $secondary;
+  color: $secondary !important;
 }
 .text-dark {
-  color: $dark;
+  color: $dark !important;
 }
 .text-muted {
-  color: $muted;
+  color: $muted !important;
+}
+.text-white {
+  color: $white !important;
 }
 
 .bg-primary {

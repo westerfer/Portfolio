@@ -1,20 +1,45 @@
 .work-tile1 {
   background-image: url('/assets/images/work/ndr-lg.jpg');
+
+  @include breakpoint(max-tablet) {
+    background-image: url('/assets/images/work/ndr-sm.jpg');
+  }
 }
 .work-tile2 {
   background-image: url('/assets/images/work/das-lg.jpg');
+
+  @include breakpoint(max-tablet) {
+    background-image: url('/assets/images/work/das-sm.jpg');
+  }
 }
 .work-tile3 {
   background-image: url('/assets/images/work/lcnrd-lg.jpg');
+
+  @include breakpoint(max-tablet) {
+    background-image: url('/assets/images/work/lcnrd-sm.jpg');
+  }
 }
 .work-tile4 {
   background-image: url('/assets/images/work/negov-lg.jpg');
+
+  @include breakpoint(max-tablet) {
+    background-image: url('/assets/images/work/negov-sm.jpg');
+  }
 }
 .work-tile5 {
   background-image: url('/assets/images/work/nsrb-lg.jpg');
+
+  @include breakpoint(max-tablet) {
+    background-image: url('/assets/images/work/nsrb-sm.jpg');
+  }
 }
 .work-tile6 {
   background-image: url('/assets/images/work/ni-lg.jpg');
+
+  @include breakpoint(max-tablet) {
+    background-image: url('/assets/images/work/ni-sm.jpg');
+  }
+
 }
 
 //

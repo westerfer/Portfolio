@@ -1,0 +1,41 @@
+---
+layout: base
+---
+
+<header>
+    <div class="container-fluid">
+        <div class="row hero-img">
+        </div>
+    </div>
+</header>
+
+<section class="inner-body animsition" data-animsition-in-class="fade-in" data-animsition-in-duration="1200" data-animsition-out-class="fade-out" data-animsition-out-duration="700">
+    <div class="container">
+        {{ content }}
+    </div>
+</section>
+
+<script>
+    $(document).ready(function() {
+        $(".animsition").animsition({
+            inClass: 'fade-in',
+            outClass: 'fade-out',
+            inDuration: 900,
+            outDuration: 900,
+            linkElement: '.animsition-link',
+            // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+            loading: true,
+            loadingParentElement: 'body', //animsition wrapper element
+            loadingClass: 'animsition-loading',
+            loadingInner: '', // e.g '<img src="loading.svg" />'
+            timeout: false,
+            timeoutCountdown: 5000,
+            onLoadEvent: true,
+            browser: [ 'animation-duration', '-webkit-animation-duration'],
+            overlay : false,
+            overlayClass : 'animsition-overlay-slide',
+            overlayParentElement : 'body',
+            transition: function(url){ window.location.href = url; }
+        });
+    });
+</script>

@@ -1,24 +1,18 @@
 ---
-layout: page
+layout: 404
+title: 404 Error
+type: inner
 ---
 
-<style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
-  }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
-</style>
-
-<div class="container">
-  <h1>404</h1>
-
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
+<div class="row error-message">
+  <div class="col-lg-6 error-img d-none d-lg-block"></div>
+  <div class="col-12 col-lg-5 offset-lg-1 d-lg-flex align-items-lg-end">
+    <div class="error-message text-center text-lg-left">
+      <h1 class="p">Whoopsie-Doodle!<br>Looks like you got lost.</h1>
+      <h2 class="h1 page-header">
+        {{ page.title | escape }}
+      </h2>
+      <a class="btn btn-sm btn-primary text-white btn-inline text-white" href="/">Head back home</a>
+    </div>
+  </div>
 </div>
