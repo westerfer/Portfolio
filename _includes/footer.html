@@ -2,22 +2,28 @@
   <div class="container foot">
     <div class="col">
       <h6>{{ site.author }}</h6>
-      <div class="d-flex flex-column applicant text-white">
-        <div class="applicant-info">
-          {{ site.title }}
-          <span class="mute">•</span>
-          {{ site.city }},&nbsp;{{site.state}}
+      <div class="applicant text-white">
+        <div class="d-flex flex-column flex-md-row applicant-info pb-0 pb-md-2">
+          <span class="mb-2 mb-md-0">{{ site.title }}</span>
+          <span class="mute d-none d-md-block px-2">•</span>
+          <span class="mb-2 mb-md-0">{{ site.city }},&nbsp;{{site.state}}</span>
         </div>
-        <div class="applicant-info">
-          <i class="fas fa-envelope mute"></i>&nbsp;
-          <a href="mailto:{{ site.email }}">{{ site.email }}</a>&nbsp;
-          <i class="fas fa-phone mute"></i>&nbsp;
-          <a href="tel:{{ site.phone }}">{{ site.phone }}</a>
+        <div class="d-flex flex-column flex-md-row applicant-info pb-0 pb-md-2">
+           <span class="mb-2 mb-md-0 d-flex">
+             <i class="fas fa-envelope mute d-none d-md-block align-self-center pr-md-2"></i><a href="mailto:{{ site.email }}">{{ site.email }}</a>
+           </span>
+          <span class="mb-2 mb-md-0 d-flex">
+            <i class="fas fa-phone mute px-2 d-none d-md-block align-self-center"></i><a href="tel:{{ site.phone }}">{{ site.phone }}</a>
+          </span>
         </div>
-        <div class="applicant-info">
-          <a href="{{ site.linkedIn }}" target="_blank">LinkedIn</a>&nbsp;
-          <i class="far fa-code mute"></i>&nbsp;
-          <a href="{{ site.github }}" target="_blank">Github</a></div>
+        <div class="d-flex flex-column flex-md-row applicant-info p-0">
+          <span class="mb-2 mb-md-0">
+            <a href="{{ site.linkedIn }}" target="_blank">LinkedIn</a>
+          </span>
+          <span class="mb-2 mb-md-0 d-flex">
+            <i class="far fa-code mute px-2 d-none d-md-block align-self-center"></i><a href="{{ site.github }}" target="_blank">Github</a>
+          </span>
+        </div>
       </div>
     </div>
   </div>

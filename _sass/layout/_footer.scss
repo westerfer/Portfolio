@@ -45,12 +45,6 @@ footer {
 	}
 
 	.applicant-info {
-		padding-bottom: .65rem;
-
-			&:last-child {
-				padding-bottom: 0;
-			}
-
 			a {
 				color: $white;
         @include transition(.1s ease-in);
