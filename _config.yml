@@ -9,13 +9,8 @@
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
 author: Wes Fairhead
 title: UI/UX Developer
-jobtitle: UI/UX Developer
 email: wfairhead@gmail.com
 location: Lincoln,&nbsp;Nebraska
 city: Lincoln
@@ -28,32 +23,31 @@ linkedIn: https://www.linkedin.com/in/wes-fairhead-0277b06b/
 
 baseurl: '' # the subpath of your site, e.g. /blog
 url: 'http://wester-fer.com/' #
-#google_analytics: UA-74351809-1UPDATE
-#google_tag_manager: GTM-M3842PXUPDATE
+#google_analytics: UA-163408901-1
 
 # Work
 work1-title: Department of Revenue
-work1-description: Dept. of Revenue Description
+work1-description: Website, UI/UX, Reorganization, Development
 work1-link: https://revenue.nebraska.gov/
 
 work2-title: Administrative Services
-work2-description: Dept. of Administrative Services Description
+work2-description: Website, UI/UX, Reorganization, Development
 work2-link: https://link.nebraska.gov/
 
 work3-title: Lewis &amp; Clark Natural Resource District
-work3-description: Lewis &amp; Clark NRD Description
+work3-description: Logo Design, Website, UI/UX, Reorganization, Development
 work3-link: https://lcnrd.nebraska.gov/
 
 work4-title: Nebraska.gov
-work4-description: Nebraska.gov Description
+work4-description: Website, UI/UX, Reorganization, Development
 work4-link: https://www.nebraska.gov/
 
 work5-title: State Records Board
-work5-description: Nebraska State Records Board Description
+work5-description: Website, UI/UX, Development
 work5-link: https://staterecordsboard.nebraska.gov/
 
 work6-title: Nebraska Interactive
-work6-description: Nebraska Interactive Description
+work6-description: Website, Development
 work6-link: http://www.nebraska-interactive.com/
 
 worklink-title: View Website
@@ -65,9 +59,8 @@ about_meta: With time and experience I've discovered that there needs to be a st
 work_meta: Research. Design. Execute. I like to fully research any project and have all questions answered before development starts.
 resume_meta: I'm a UI/UX Developer with over 5 years of experience in design and development.
 contact_meta: Hi! I'm Wes Fairhead and I'm a UI/UX Developer. Traveling, gardening, animals and coding are my jam Get in touch with me today!
-    #body {
-    #background: url(../images/{% if page.bgimage %}{{ page.bgimage }}{% else %}{{ site.bgimage }}{% endif %}) no-repeat bottom center;
-#}
+
+
 # Build settings
 markdown: kramdown
 permalink: /articles/:title
