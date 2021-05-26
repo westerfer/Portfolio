@@ -1,16 +1,27 @@
 
   {% if page.type == "contact" %}
-    <div class="col-12 d-flex flex-column resume-head mb-0">
+    <div class="col-12 resume-head mb-0">
   {% endif %}
   {% if page.type == "resume" %}
-    <div class="col-12 d-flex flex-column resume-head">
+    <div class="col-12 p-0 resume-head">
   {% endif %}
 
-  <h2 class="h4 mb-0">{{ site.author }}</h2>
-  <h3 class="h5 mb-2 text-danger">{{ site.title }}</h3>
-  <h4 class="p font-weight-bold mb-1">{{ site.city }},&nbsp;{{site.state}}</h4>
-  <h4 class="p font-weight-bold mb-1"><a href="mailto:{{ site.email }}" >{{ site.email }}</a></h4>
-  <h4 class="p font-weight-bold mb-0"><a href="tel:{{ site.phone }}">{{ site.phone }}</a></h4>
+<!--      <h2 class="h4 mb-0">{{ site.author }}</h2>-->
+  <h3 class="h2 mb-0 font-weight-light resume-firstName">Wes</h3>
+  <h4 class="h1 mt-n3 mb-0 resume-lastName" >Fairhead</h4>
+      <div class="d-inline-flex py-2 resume-titlebkg">
+        <h5 class="h6 font-weight-bold mb-0 text-uppercase resume-title">{{ site.title }}</h5>
+      </div>
+
+      <div class="d-flex flex-row mt-3 resume-contactInfo">
+        <h5 class="small mb-0 font-weight-light">
+          <a class="text-muted" href="mailto:{{ site.email }}"><i class="fal fa-envelope pr-2"></i>{{ site.email }}</a>
+        </h5>
+        <h5 class="small mb-0 font-weight-light pl-md-4">
+         <a class="text-muted" href="tel:{{ site.phone }}"> <i class="fal fa-phone-alt pr-2"></i>{{ site.phone }}</a>
+        </h5>
+      </div>
+
   {% if page.type == "contact" %}
     </div>
   {% endif %}

@@ -1,5 +1,44 @@
+.resume-firstName {
+	text-transform: uppercase;
+	font-size: 55pt;
+}
+
+.resume-lastName {
+	text-transform: uppercase;
+	font-size: 75pt;
+	margin-top: -2rem;
+}
+
+.resume-contactInfo a {
+	&:hover,
+	&:focus,
+	&:visited,
+	&:active {
+		border: none;
+		text-decoration: none;
+		color: $dark !important;
+	}
+}
+.resume-titlebkg {
+
+	background-color: $warning;
+
+	.resume-title {
+		text-transform: uppercase;
+		font-size: 20pt;
+		padding-left: 3.5rem;
+		padding-right: 3.5rem;
+	}
+
+}
+
+.sectionTitle {
+	color: $danger;
+	letter-spacing: 1pt;
+	font-size: 18pt;
+}
+
 .resume-head {
-  background: rgba($well, .1);
   border-radius: 5px;
   padding: 1rem;
 
@@ -20,38 +59,33 @@
   margin-top: 0;
   margin-bottom: 2rem;
 
-	.about-content {
-		padding-left: 1.5rem;
-
-		@include breakpoint(max-tablet) {
-			padding-left: 0;
-		}
-
-	}
-
 	.exp-title {
 		font-weight: $bold;
-		color: $danger;
-		margin-bottom: .25rem;
+		color: $dark;
+		margin-bottom: 0;
+		font-size: 13pt
 	}
 
 	.exp-date {
 		font-weight: $bold;
-		color: $dark;
+		color: lighten($secondary,20%);
+		font-size: 12pt;
 		margin-bottom: 1.25rem;
+		letter-spacing: 0;
 	}
 
 	.exp-details-icon {
 		padding-right: .5rem;
 		font-size: 65%;
 		vertical-align: middle;
-		color: $primary;
+		color: lighten($secondary,20%);
 		opacity: 0.6;
 		padding-top: 0.4rem;
 	}
 
 	.exp-details p {
 		display: flex;
+		font-size: 13pt;
 	}
 
 
@@ -76,7 +110,7 @@
 }
 
 .bar-chart {
-	background: $danger;
+	background: lighten($secondary, 10%);
 	height: .5rem;
 	border-radius: 20px;
 	overflow: hidden;
@@ -93,7 +127,7 @@
 		right: 0;
 		width: 1rem;
 		height: 100%;
-		background: darken($danger, 10%);
+		background: $dark;
 		border-radius: 20px;
 	}
 

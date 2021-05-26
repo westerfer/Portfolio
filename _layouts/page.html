@@ -9,13 +9,14 @@ layout: base
     </div>
 </header>
 
-
-
 <section class="inner-body">
     <div class="container">
-        <h1 class="page-header">
-            {{ page.title | escape }}
-        </h1>
+        {% if page.type != "resume"  %}
+            <h1 class="page-header">
+                {{ page.title | escape }}
+            </h1>
+        {% endif %}
+
         {{ content }}
     </div>
 </section>

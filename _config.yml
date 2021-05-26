@@ -10,19 +10,19 @@
 
 # Site settings
 author: Wes Fairhead
-title: UI/UX Developer
+title: Frontend Developer
 email: wfairhead@gmail.com
 location: Lincoln,&nbsp;Nebraska
 city: Lincoln
 state: Nebraska
 phone: 402.309.4653
 sitetitle: Professional Portfolio
-description: Hi, my name is Wes Fairhead. As a UI/UX Developer, it’s hard to focus on anything other than the design of the project. With time and experience I've discovered that there needs to be a strong relationship between both business logic and design to create a great user experience.
+description: Hi, my name is Wes Fairhead. Through my 6 years of development experience, I've discovered that there needs to be a strong relationship between business logic, development and design to create a great application or website.
 github: https://github.com/westerfer/
 linkedIn: https://www.linkedin.com/in/wes-fairhead-0277b06b/
 
 baseurl: '' # the subpath of your site, e.g. /blog
-url: 'http://wester-fer.com/' #
+url: 'https://westerfer.netlify.app/' #
 #google_analytics: UA-163408901-1
 
 # Work
@@ -35,7 +35,7 @@ work2-description: Website, UI/UX, Reorganization, Development
 work2-link: https://link.nebraska.gov/
 
 work3-title: Lewis &amp; Clark Natural Resource District
-work3-description: Logo Design, Website, UI/UX, Reorganization, Development
+work3-description: Website, UI/UX, Reorganization, Development, Logo Design
 work3-link: https://lcnrd.nebraska.gov/
 
 work4-title: Nebraska.gov
