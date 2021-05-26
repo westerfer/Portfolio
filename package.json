@@ -1,12 +1,13 @@
 {
   "name": "Westerfer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "./node_modules/.bin/webpack --watch | bundle exec jekyll serve --livereload --incremental",
     "build": "./node_modules/.bin/webpack | bundle exec jekyll build",
-    "clean": "rimraf ./_site"
+    "clean": "rimraf ./_site",
+    "jekyll build": "./node_modules/.bin/webpack | bundle exec jekyll build"
   },
   "author": "",
   "license": "ISC",
