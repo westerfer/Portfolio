@@ -5,7 +5,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "./node_modules/.bin/webpack --watch | bundle exec jekyll serve --livereload --incremental",
-    "build": "CI=true npm run build",
+    "build": "npm run build",
     "clean": "rimraf ./_site",
     "jekyll build": "./node_modules/.bin/webpack | bundle exec jekyll build"
   },
@@ -19,6 +19,7 @@
     "webpack-cli": "^3.3.11"
   },
   "dependencies": {
-    "highlight.js": "^9.12.0"
+    "highlight.js": "^9.12.0",
+    "netlify-cli": "^3.31.14"
   }
 }
