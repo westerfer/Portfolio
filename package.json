@@ -5,9 +5,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "./node_modules/.bin/webpack --watch | bundle exec jekyll serve --livereload --incremental",
-    "build": "npm run build",
-    "clean": "rimraf ./_site",
-    "jekyll build": "./node_modules/.bin/webpack | bundle exec jekyll build"
+    "build": "./node_modules/.bin/webpack | bundle exec jekyll build",
+    "clean": "rimraf ./_site"
   },
   "author": "",
   "license": "ISC",
