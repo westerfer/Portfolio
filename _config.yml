@@ -54,12 +54,11 @@ worklink-title: View Website
 
 
 # Metatag Details
-home_meta: One of most important rules that I like to follow when developing a user interface or creating that perfect experience. However, there's a certain point in every design where this rule, like many others, is meant to be broken.
+home_meta: As a Frontend Developer, I aspire to become a full stack web developer where I can work on both the frontend and the backend of applications.
 about_meta: With time and experience I've discovered that there needs to be a strong relationship between both business logic and design to create a great user experience.
 work_meta: Research. Design. Execute. I like to fully research any project and have all questions answered before development starts.
-resume_meta: I'm a UI/UX Developer with over 5 years of experience in design and development.
-contact_meta: Hi! I'm Wes Fairhead and I'm a UI/UX Developer. Traveling, gardening, animals and coding are my jam Get in touch with me today!
-
+resume_meta: I'm a Frontend Developer with 6+ years of experience in design and development.
+contact_meta: Hi! I'm Wes Fairhead and I'm a Frontend Developer. Coding, gardening, animals and traveling are my jam. Get in touch with me today!
 
 # Build settings
 markdown: kramdown
